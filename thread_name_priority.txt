@@ -1,0 +1,23 @@
+
+class threadd extends Thread
+{
+	public void run()
+	{
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread().getPriority());
+	}
+}
+public class thread2
+{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		threadd th=new threadd();
+		th.start();
+		threadd th1=new threadd();
+		th1.start();
+		threadd th2=new threadd();
+		th2.start();
+	}
+
+}
