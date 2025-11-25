@@ -1,0 +1,28 @@
+
+
+public class Loop 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		
+		
+		System.out.println("Size of Byte:"+Byte.BYTES); 
+		System.out.println("Size of Short:"+Short.BYTES); 
+		System.out.println("Size of Character:"+Character.BYTES); 
+		System.out.println("Size of Integer:"+Integer.BYTES); 
+		System.out.println("Size of Long:"+Long.BYTES); 
+		System.out.println("Size of Double:"+Double.BYTES); 
+		//size of Boolean 
+		System.out.println("Size of Boolean:"+Byte.SIZE); 
+		 
+		//size of string 
+		String str="tek"; 
+		System.out.println("Size of String:"+2*str.length());//each character having 2 byte
+		
+	} 
+}
+	
+
+
