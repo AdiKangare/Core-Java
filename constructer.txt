@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class car
+{
+	int num;
+	String name;
+	float price;
+	car(int num,String name,float price)
+	{
+		this.num=num;
+		this.name=name;
+		this.price=price;
+		System.out.println("\n..................Your Car Details.....");
+		System.out.println("Your Car Number Is..: "+num);
+		System.out.println("Your Car Name Is..: "+name);
+		System.out.println("Your Car Price Is..: "+price);
+	}
+}
+class owner
+{
+	int n;
+	String nam;
+	float sal;
+	owner(int n,String nam,float sal)
+	{
+		this.n=n;
+		this.nam=nam;
+		this.sal=sal;
+		System.out.println("\n\n..............Owners Details...........");
+		System.out.println("Owner Phone Number.:"+n);
+		System.out.println("Owner Name.:"+nam);
+		System.out.println("Owner Salary.:"+sal);
+		
+		
+	}
+	
+}
+
+public class Cons 
+
+{
+	
+	
+	
+	public static void main(String args[])
+	{
+		car cr=new car(101,"Fortuner",500000);
+		owner or=new owner(12345678,"Aditya",45000);
+	}
+}
