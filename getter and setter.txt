@@ -1,0 +1,38 @@
+class Person
+{
+	private String name;
+	private int num;
+	
+	
+	public void SetName(String nm)
+	{
+		name=nm;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	
+	public void SetInt(int n)
+	{
+		num=n;
+	}
+	public int getInt()
+	{
+		return num;
+	}
+}
+public class Geet 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Person ps=new Person();
+		ps.SetName("Aditya");
+		ps.SetInt(12);
+		System.out.println(ps.getInt());
+		System.out.println(ps.getName());
+	}
+
+}
