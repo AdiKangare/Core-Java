@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class Manager
+{
+	float sal=75000;
+}
+class Emp1 extends Manager
+{
+	float sal1=60000;
+}
+class Emp2 extends Emp1
+{
+	float sal2=50000;
+}
+class Emp3 extends Emp2
+{
+	float sal3=45000;
+}
+public class Inhert 
+{
+
+	public static void main(String[] args) 
+	{
+		Emp3 em=new Emp3();
+		System.out.println("Salary Of The Compony "+(em.sal+em.sal1+em.sal2+em.sal3));
+	}
+
+}
+
+
+
+
+
+
