@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+public class cafe {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("========= Welcome to Java Café =========");
+        System.out.println("Menu:");
+        System.out.println("1. Coffee - $15.00");
+        System.out.println("2. Tea - $8.50");
+        System.out.println("3. Sandwich - $30.00");
+        System.out.println("4. Muffin - $10.00");
+        System.out.println("5. Exit");
+        System.out.println("----------------------------------------");
+
+        System.out.print("Enter your choice : ");
+        int choice = sc.nextInt();
+
+        double price = 0;
+
+        switch (choice)
+        {
+            case 1:
+                System.out.println("You ordered Coffee.");
+                price = 15.00;
+                break;
+
+            case 2:
+                System.out.println("You ordered Tea.");
+                price = 8.50;
+                break;
+
+            case 3:
+                System.out.println("You ordered Sandwich.");
+                price = 30.00;
+                break;
+
+            case 4:
+                System.out.println("You ordered Muffin.");
+                price = 10.00;
+                break;
+
+            case 5:
+                System.out.println("Thank you! Visit again.");
+                return;
+
+            default:
+                System.out.println("Invalid choice! Please select from the menu.");
+                return;
+        }
+
+        System.out.println("Price: $" + price);
+
+        System.out.print("Enter quantity: ");
+        int qty = sc.nextInt();
+
+        double total = price * qty;
+        System.out.println("Your total bill is: $" + total);
+
+        System.out.println("========= Thank You! =========");
+    }
+}
